@@ -1,0 +1,115 @@
+import Foundation
+var batalha = 0
+var escolha = "s" 
+var escolhaPokemon = "1"
+var escolhaPokemon4 = "4"
+struct Pokemon {
+    var name: String
+    var attack: Int
+    var defense: Int
+    var  HP: Int
+}
+
+
+var Bulbasaur = Pokemon( name : "Bulbasauro", attack: 200, defense: 250, HP: 300)
+var Squirtle = Pokemon(name : "Squirtle" , attack: 300, defense: 350, HP:300 )
+var Lapras = Pokemon(name : "Lapras" , attack: 500, defense: 200, HP: 250 )
+var Vaporeon = Pokemon(name : "Vaporeon" , attack: 500, defense: 250, HP: 300 )
+var Charmander = Pokemon(name : "Charmander", attack: 700, defense: 450, HP: 500)
+
+var Pokemons: [Pokemon] = [Bulbasaur]
+
+
+  print("                   Batalha Pokémon  ")
+  print("\n////////////////////////////////////////////////////////////////")
+
+ 
+  print( """
+          
+          Tenho ouvido relatos sobre elementos misteriosos
+          perto de pokeparadas. acho que você deve tomar atitude de 
+          investigar.
+          mais tenha cuidado e se Prepare para batalha 
+          
+          """)
+  print("/////////////////////////////////////////////////////////////////")
+    _ =  readLine ()
+    print( """
+         EQUIPE ROCKE...
+         - Não está vendo muitos iten ? È   Que  ando roubando todos eles.
+         vou  acabar com você sem o menor esforço !!! 
+         Você tem ideia de  quão  quente é o bafo de fogo de um  Pokémon ?
+          
+       """)
+print("//////////////////////////////////////////////////////// ")
+_ =  readLine ()
+    print( """
+          Prepare-se para a batalha.....
+          
+          Charmander escolho voceeê...  
+         """)
+_ =  readLine ()
+
+
+print( """
+                  !###.   .                                   
+                :#::::!#:::#.               :.                
+                #!!!!!:###!:::!#!        .#!::##              
+                :#!!!!##!!!!::#!        .#::!!:!#             
+                  :###:!!!!##.          .#:!!!!!#             
+              :##!#!                      ##!!#!    :##:      
+           .#!!::#!        .:::.            .     :#::::#:    
+          ##!!:::#!##!:::::::::::::::!##:        .#:!!!!:#    
+         !#!!!##!::::::::::::::::::::::::::##     !#!!!!!#    
+         #!##:::::::::::::::::::::::::::::::::##   .####.     
+         ##::::!#####!::::::::::::::::!####!::::!#.           
+       !#::::!##.######:::::::::::::!#!:#####!::::##          
+      !#::::::!#!!!!##:::::::::::::::##!!!!##::::::!#         
+      #!!:::::!#!::::::::::!!::!:::::::::::#!:::::!!#.        
+      #!!!!!::::####!!!!!!:::::::!!!!!!####!:::!!!!!#.        
+      .#!!!!!!!!!:::::::::::!!!:::::::::::!!!!!!!!!#:         
+        ##!!!!!!!!!!!!!:::::::::::::!!!!!!!!!!!!!!#           
+          !#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#!             
+             .###!!!!!!!!!!!!!!!!!!!!!!!!!!##.                
+                   .!######!!!!!######!.    
+      """)
+ _ =  readLine ()
+print("        \(Charmander.name) HP \(Charmander.HP) Attack \(Charmander.attack) Defense \(Charmander.defense)")
+print( " \n" )
+print("//////////////////////////////////////////////////////// ")
+ _ =  readLine ()
+
+
+
+
+print( " você deseja enfrentar esse Pokémon  S/N Sim ou Não   " )
+ if escolha == readLine( ){
+   print( " \n" )
+    print ( "Escolha seu Pokémon " )
+    print("1 -  \(Bulbasaur.name) HP \(Bulbasaur.HP) Attack \(Bulbasaur.attack) Defense \(Bulbasaur.defense)")
+    print("2 -  \(Squirtle.name)   HP \(Squirtle.HP) Attack \(Squirtle.attack) Defense \(Squirtle.defense) ") 
+    print("3 -  \(Lapras.name)     HP \(Lapras.HP) Attack \(Lapras.attack) Defense \(Lapras.defense) ")
+    print("4 -  \(Vaporeon.name)   HP \(Vaporeon.HP) Attack \(Vaporeon.attack) Defense \(Vaporeon.defense) ")
+ } else{ 
+  print(" você é um Arregão , Volte a treinar. ")
+   
+ } 
+
+
+   print( "Escolha  " )
+   if escolhaPokemon == readLine( ){
+  print(Bulbasaur.name,  " X ", Charmander.name)
+        Charmander.attack = Charmander.attack  - Bulbasaur.attack 
+        Charmander.defense = Charmander.defense - Bulbasaur.defense
+        Charmander.HP = Charmander.HP - Bulbasaur.HP
+        print(" Charmander Venceu Bulbasaur\n HP \(Charmander.HP) Attack \(Charmander.attack) Defense \(Charmander.defense) ")
+   }
+   print( "Escolha outro Pokémon " )
+   if escolhaPokemon4 == readLine( ){
+   print(Vaporeon.name,  " X ", Charmander.name)
+        Vaporeon.attack = Vaporeon.attack  - Charmander.attack 
+        Vaporeon.defense = Vaporeon.defense - Charmander.defense
+        Vaporeon.HP = Vaporeon.HP - Charmander.HP
+                      print("Vaporeon Venceu Charmander\n HP \(Vaporeon.HP) Attack \(Vaporeon.attack) Defense \(Vaporeon.defense) ")   
+          print( " \n Parabéns você venceu !!!" )
+ }
