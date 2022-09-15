@@ -1,0 +1,2 @@
+   print("3 -  \(Lapras.name)     HP \(Lapras.HP) Attack \(Lapras.attack) Defense \(Lapras.defense) ")
+    print("4 -  \(Vaporeon.name)   HP \(Vaporeon.HP) Attack \(Vaporeon.attack) Defense \(Vaporeon.defense) ")
