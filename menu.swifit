@@ -1,0 +1,14 @@
+
+
+print( " você deseja enfrentar esse Pokémon  S/N Sim ou Não   " )
+ if escolha == readLine( ){
+   print( " \n" )
+    print ( "Escolha seu Pokémon " )
+    print("1 -  \(Bulbasaur.name) HP \(Bulbasaur.HP) Attack \(Bulbasaur.attack) Defense \(Bulbasaur.defense)")
+    print("2 -  \(Squirtle.name)   HP \(Squirtle.HP) Attack \(Squirtle.attack) Defense \(Squirtle.defense) ") 
+    print("3 -  \(Lapras.name)     HP \(Lapras.HP) Attack \(Lapras.attack) Defense \(Lapras.defense) ")
+    print("4 -  \(Vaporeon.name)   HP \(Vaporeon.HP) Attack \(Vaporeon.attack) Defense \(Vaporeon.defense) ")
+ } else{ 
+  print(" você é um Arregão , Volte a treinar. ")
+   
+ } 
